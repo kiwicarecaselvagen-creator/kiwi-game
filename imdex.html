@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Racing JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <span>Pontos: <strong id="score">0</strong></span>
+            <span>Velocidade: <strong id="speed">0</strong> km/h</span>
+        </div>
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div id="game-over" class="hidden">
+            <h2>Fim de Corrida!</h2>
+            <p>Pontuação final: <span id="final-score">0</span></p>
+            <button onclick="restartGame()">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
